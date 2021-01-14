@@ -211,6 +211,10 @@ main {
 }
 .color {
   color: var(--clr-primary-5);
+  font-size: 20px;
+  margin-left: 5px;
+  background: var(--clr-black);
+  border: none
 }
 .btn-hero {
   font-family: var(--ff-primary);

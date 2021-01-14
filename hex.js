@@ -1,16 +1,24 @@
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
-
+const copyButton = document.querySelector(".select")
+const myInp = document.getElementById("myInp")
 btn.addEventListener("click", ()=> {
     let hexColor = "#";
     for(let i = 0; i<6; i++){
         hexColor += hex[getRandomNumbers()]
     }
-    color.textContent = hexColor;
+    color.setAttribute("value", hexColor)
     document.body.style.backgroundColor = hexColor;
+        
 }) 
 
 function getRandomNumbers(){
     return Math.floor(Math.random() * hex.length)
 }
+copyButton.addEventListener("click",()=> {
+    const col = document.querySelector(".color")
+    col.select();
+    document.execCommand("copy");
+    alert("Copied: "+col.value);
+})
