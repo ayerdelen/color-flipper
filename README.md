@@ -8,4 +8,7 @@
 - Generating random numbers and use them
 - Create another function to be more functionality
 
+## I've added:
+- Copy button so that the random hex code can be copied.
+
 ![.](ss.png)
