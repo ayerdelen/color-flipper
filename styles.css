@@ -211,10 +211,12 @@ main {
 }
 .color {
   color: var(--clr-primary-5);
-  font-size: 20px;
-  margin-left: 5px;
+  font-size: 30px;
   background: var(--clr-black);
-  border: none
+  border: none;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
 }
 .btn-hero {
   font-family: var(--ff-primary);
